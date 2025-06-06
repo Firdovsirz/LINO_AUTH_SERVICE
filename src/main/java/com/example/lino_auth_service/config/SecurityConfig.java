@@ -29,6 +29,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers("/api/**").hasAuthority("DEVELOPER")
                         .requestMatchers("/auth/**").permitAll()
+                        .requestMatchers("/lino-otp.png", "/static/**", "/css/**", "/js/**", "/images/**").permitAll()
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                         .anyRequest().authenticated()
                 )
