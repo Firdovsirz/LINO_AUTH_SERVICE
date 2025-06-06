@@ -13,20 +13,20 @@
         .parent-container {
             width: 100%;
         }
-        .otp-container{
+        .otp-container {
             position: relative;
-        }
-        .otp-container>img {
             width: 350px;
             height: 350px;
-            position: absolute;
+            background: url('https://linoauthservice-production.up.railway.app/lino-otp.png') no-repeat center center;
+            background-size: contain;
         }
-        .otp-container>h2{
-            z-index: 100;
+        .otp-container > h2 {
             position: absolute;
             top: 216px;
             left: 127px;
             color: #60acdc;
+            font-size: 48px;
+            z-index: 10;
         }
     </style>
 </head>
@@ -36,8 +36,6 @@
     <p>Your OTP code is:</p>
     <div class="parent-container">
         <div class="otp-container">
-            <!--            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAD0V2NhQlgAAPRXanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNj" alt="Lino avatar">-->
-            <img src="https://linoauthservice-production.up.railway.app/lino-otp.png">
             <h2>123-456</h2>
         </div>
     </div>
