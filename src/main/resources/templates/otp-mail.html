@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Your OTP Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(96, 172, 220, 0.2);
+            padding: 30px;
+            border-top: 6px solid #60acdc;
+        }
+        h2 {
+            color: #60acdc;
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 48px;
+            color: #60acdc;
+            margin: 20px 0;
+            letter-spacing: 4px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999999;
+            text-align: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent-container {
+            width: 100%;
+        }
+        .otp-container{
+            position: relative;
+        }
+        .otp-container>img {
+            width: 350px;
+            height: 350px;
+            position: absolute;
+        }
+        .otp-container>h2{
+            z-index: 100;
+            position: absolute;
+            top: 216px;
+            left: 127px;
+            color: #60acdc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Hello!</h2>
+    <p>Your OTP code is:</p>
+    <div class="parent-container">
+        <div class="otp-container">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAD0V2NhQlgAAPRXanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNj" alt="Lino avatar">
+            <h2>123-456</h2>
+        </div>
+    </div>
+    <p>This code is valid for 5 minutes.</p>
+    <div class="footer">
+        &copy; 2025 Lino. All rights reserved.
+    </div>
+</div>
+</body>
+</html>
